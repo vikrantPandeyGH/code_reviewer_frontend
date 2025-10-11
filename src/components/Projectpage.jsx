@@ -14,7 +14,7 @@ const Projectpage = () => {
   const [language, setLanguage] = useState("javascript");
 
   useEffect(() => {
-    const temp = io("http://localhost:3000", {
+    const temp = io("https://code-reviewer-backend-eosin.vercel.app/", {
       query: { project: id },
     });
 

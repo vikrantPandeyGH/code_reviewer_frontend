@@ -8,7 +8,7 @@ const CreateProject = () => {
   function handlesubmit(event) {
     event.preventDefault();
     axios
-      .post("http://localhost:3000/projects/create", {
+      .post("https://code-reviewer-backend-eosin.vercel.app/projects/create", {
         projectname,
       })
       .then(function () {

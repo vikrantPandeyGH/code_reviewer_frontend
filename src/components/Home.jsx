@@ -9,7 +9,7 @@ const Home = () => {
   const [allprojects,setallprojects] = useState([])
   const navigate = useNavigate()
   useEffect(function(){
-    axios.get('http://localhost:3000/projects/get-all').then(function(res){
+    axios.get('https://code-reviewer-backend-eosin.vercel.app/projects/get-all').then(function(res){
          setallprojects(res.data.data)
     })
   },[])
