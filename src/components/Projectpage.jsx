@@ -14,7 +14,7 @@ const Projectpage = () => {
   const [language, setLanguage] = useState("javascript");
 
   useEffect(() => {
-    const temp = io("https://code-reviewer-backend-eosin.vercel.app/", {
+    const temp = io("https://code-reviewer-backend-flax.vercel.app/", {
       query: { project: id },
     });
 
