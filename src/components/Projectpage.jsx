@@ -6,7 +6,7 @@ import MonacoEditor from "@monaco-editor/react";
 
 const Projectpage = () => {
   const { id } = useParams();
-  const [socket, setSocket] = useState(null);
+  const [Socket, setSocket] = useState(null);
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [code, setCode] = useState("// Start coding...");
