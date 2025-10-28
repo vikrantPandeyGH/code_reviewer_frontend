@@ -9,7 +9,7 @@ const Home = () => {
   const [allprojects,setallprojects] = useState([])
   const navigate = useNavigate()
   useEffect(function(){
-    axios.get('https://code-reviewer-backend-flax.vercel.app/projects/get-all').then(function(res){
+    axios.get('https://code-reviewer-backend-five.vercel.app/projects/get-all').then(function(res){
          setallprojects(res.data.data)
     })
   },[])
